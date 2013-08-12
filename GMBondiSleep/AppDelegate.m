@@ -25,10 +25,6 @@
     GMHowToViewController *howToSection = [[GMHowToViewController alloc] init];// How to.
     GMThanksContactViewController *thanksSection = [[GMThanksContactViewController alloc] init]; // Thanks and Contact.
     
-    
-    
-    
-    
     self.tabBarController = [[UITabBarController alloc] init];
     self.tabBarController.viewControllers = @[mapSection,
                                               favouriteSection,
