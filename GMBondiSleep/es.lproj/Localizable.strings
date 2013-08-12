@@ -1,0 +1,13 @@
+/* 
+  Localizable.strings
+  GMBondiSleep
+
+  Created by Gastón Montes on 12/08/13.
+  Copyright (c) 2013 Gastón Montes. All rights reserved.
+*/
+
+// Tab bar items
+"TabBarItem.Map" = "Mapa";
+"TabBarItem.Favourite" = "Favoritos";
+"TabBarItem.HowTo" = "Tutoriales";
+"TabBarItem.ContactMe" = "Contacto";

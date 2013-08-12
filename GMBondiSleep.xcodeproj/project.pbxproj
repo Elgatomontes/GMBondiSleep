@@ -1,0 +1,771 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		38CB73CD1798A8E100EF4FC9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38CB73CC1798A8E100EF4FC9 /* UIKit.framework */; };
+		38CB73CF1798A8E100EF4FC9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38CB73CE1798A8E100EF4FC9 /* Foundation.framework */; };
+		38CB73D11798A8E100EF4FC9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38CB73D01798A8E100EF4FC9 /* CoreGraphics.framework */; };
+		38CB73D91798A8E200EF4FC9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 38CB73D81798A8E200EF4FC9 /* main.m */; };
+		38CB73DD1798A8E200EF4FC9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 38CB73DC1798A8E200EF4FC9 /* AppDelegate.m */; };
+		38CB73DF1798A8E200EF4FC9 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 38CB73DE1798A8E200EF4FC9 /* Default.png */; };
+		38CB73E11798A8E200EF4FC9 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 38CB73E01798A8E200EF4FC9 /* Default@2x.png */; };
+		38CB73E31798A8E200EF4FC9 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 38CB73E21798A8E200EF4FC9 /* Default-568h@2x.png */; };
+		38CB74051798A8E200EF4FC9 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38CB74041798A8E200EF4FC9 /* SenTestingKit.framework */; };
+		38CB74061798A8E200EF4FC9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38CB73CC1798A8E100EF4FC9 /* UIKit.framework */; };
+		38CB74071798A8E200EF4FC9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38CB73CE1798A8E100EF4FC9 /* Foundation.framework */; };
+		38CB74121798A8E200EF4FC9 /* GMBondiSleepTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 38CB74111798A8E200EF4FC9 /* GMBondiSleepTests.m */; };
+		38D2A6C417B8B7C80000F448 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 38D2A6C317B8B7C80000F448 /* InfoPlist.strings */; };
+		38D2A6CA17B8B8720000F448 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 38D2A6C817B8B8720000F448 /* InfoPlist.strings */; };
+		38D2A6CD17B8B89B0000F448 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 38D2A6CF17B8B89B0000F448 /* Localizable.strings */; };
+		38E953E217B7756B00FA3A9E /* GMBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38E953E117B7756B00FA3A9E /* GMBaseViewController.m */; };
+		38E953E517B7759400FA3A9E /* GMBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 38E953E417B7759400FA3A9E /* GMBaseView.m */; };
+		38E953E817B775B200FA3A9E /* GMBaseObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 38E953E717B775B200FA3A9E /* GMBaseObject.m */; };
+		38E953EC17B7777A00FA3A9E /* GMMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38E953EA17B7777A00FA3A9E /* GMMapViewController.m */; };
+		38E953ED17B7777A00FA3A9E /* GMMapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38E953EB17B7777A00FA3A9E /* GMMapViewController.xib */; };
+		38E9540617B77C3800FA3A9E /* contactMe.png in Resources */ = {isa = PBXBuildFile; fileRef = 38E953FC17B77C3800FA3A9E /* contactMe.png */; };
+		38E9540717B77C3800FA3A9E /* contactMe@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 38E953FD17B77C3800FA3A9E /* contactMe@2x.png */; };
+		38E9540817B77C3800FA3A9E /* favourite.png in Resources */ = {isa = PBXBuildFile; fileRef = 38E953FE17B77C3800FA3A9E /* favourite.png */; };
+		38E9540917B77C3800FA3A9E /* favourite@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 38E953FF17B77C3800FA3A9E /* favourite@2x.png */; };
+		38E9540A17B77C3800FA3A9E /* howTo.png in Resources */ = {isa = PBXBuildFile; fileRef = 38E9540017B77C3800FA3A9E /* howTo.png */; };
+		38E9540B17B77C3800FA3A9E /* howTo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 38E9540117B77C3800FA3A9E /* howTo@2x.png */; };
+		38E9540C17B77C3800FA3A9E /* map.png in Resources */ = {isa = PBXBuildFile; fileRef = 38E9540217B77C3800FA3A9E /* map.png */; };
+		38E9540D17B77C3800FA3A9E /* map@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 38E9540317B77C3800FA3A9E /* map@2x.png */; };
+		38E9540E17B77C3800FA3A9E /* setting.png in Resources */ = {isa = PBXBuildFile; fileRef = 38E9540417B77C3800FA3A9E /* setting.png */; };
+		38E9540F17B77C3800FA3A9E /* setting@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 38E9540517B77C3800FA3A9E /* setting@2x.png */; };
+		38E9541417B77D2000FA3A9E /* GMFavouriteHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38E9541217B77D2000FA3A9E /* GMFavouriteHomeViewController.m */; };
+		38E9541517B77D2000FA3A9E /* GMFavouriteHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38E9541317B77D2000FA3A9E /* GMFavouriteHomeViewController.xib */; };
+		38E9541917B77E1D00FA3A9E /* GMHowToViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38E9541717B77E1D00FA3A9E /* GMHowToViewController.m */; };
+		38E9541A17B77E1D00FA3A9E /* GMHowToViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38E9541817B77E1D00FA3A9E /* GMHowToViewController.xib */; };
+		38E9541E17B77F4A00FA3A9E /* GMThanksContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38E9541C17B77F4900FA3A9E /* GMThanksContactViewController.m */; };
+		38E9541F17B77F4A00FA3A9E /* GMThanksContactViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38E9541D17B77F4900FA3A9E /* GMThanksContactViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		38CB74081798A8E200EF4FC9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 38CB73C11798A8E100EF4FC9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 38CB73C81798A8E100EF4FC9;
+			remoteInfo = GMBondiSleep;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		38CB73C91798A8E100EF4FC9 /* GMBondiSleep.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GMBondiSleep.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		38CB73CC1798A8E100EF4FC9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		38CB73CE1798A8E100EF4FC9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		38CB73D01798A8E100EF4FC9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		38CB73D81798A8E200EF4FC9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		38CB73DA1798A8E200EF4FC9 /* GMBondiSleep-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GMBondiSleep-Prefix.pch"; sourceTree = "<group>"; };
+		38CB73DB1798A8E200EF4FC9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		38CB73DC1798A8E200EF4FC9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		38CB73DE1798A8E200EF4FC9 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		38CB73E01798A8E200EF4FC9 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		38CB73E21798A8E200EF4FC9 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		38CB74031798A8E200EF4FC9 /* GMBondiSleepTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GMBondiSleepTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		38CB74041798A8E200EF4FC9 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		38CB74101798A8E200EF4FC9 /* GMBondiSleepTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GMBondiSleepTests.h; sourceTree = "<group>"; };
+		38CB74111798A8E200EF4FC9 /* GMBondiSleepTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GMBondiSleepTests.m; sourceTree = "<group>"; };
+		38D2A6C317B8B7C80000F448 /* InfoPlist.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = InfoPlist.strings; sourceTree = "<group>"; };
+		38D2A6C517B8B7D80000F448 /* GMBondiSleep-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GMBondiSleep-Info.plist"; sourceTree = "<group>"; };
+		38D2A6C717B8B8720000F448 /* GMBondiSleepTests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GMBondiSleepTests-Info.plist"; sourceTree = "<group>"; };
+		38D2A6C817B8B8720000F448 /* InfoPlist.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = InfoPlist.strings; sourceTree = "<group>"; };
+		38D2A6CE17B8B89B0000F448 /* en */ = {isa = PBXFileReference; lastKnownFileType = file; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		38D2A6D017B8B9C80000F448 /* es */ = {isa = PBXFileReference; lastKnownFileType = file; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		38E953E017B7756B00FA3A9E /* GMBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMBaseViewController.h; sourceTree = "<group>"; };
+		38E953E117B7756B00FA3A9E /* GMBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMBaseViewController.m; sourceTree = "<group>"; };
+		38E953E317B7759400FA3A9E /* GMBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMBaseView.h; sourceTree = "<group>"; };
+		38E953E417B7759400FA3A9E /* GMBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMBaseView.m; sourceTree = "<group>"; };
+		38E953E617B775B200FA3A9E /* GMBaseObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMBaseObject.h; sourceTree = "<group>"; };
+		38E953E717B775B200FA3A9E /* GMBaseObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMBaseObject.m; sourceTree = "<group>"; };
+		38E953E917B7777A00FA3A9E /* GMMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMMapViewController.h; sourceTree = "<group>"; };
+		38E953EA17B7777A00FA3A9E /* GMMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMMapViewController.m; sourceTree = "<group>"; };
+		38E953EB17B7777A00FA3A9E /* GMMapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GMMapViewController.xib; sourceTree = "<group>"; };
+		38E953FC17B77C3800FA3A9E /* contactMe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = contactMe.png; path = Images/contactMe.png; sourceTree = "<group>"; };
+		38E953FD17B77C3800FA3A9E /* contactMe@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "contactMe@2x.png"; path = "Images/contactMe@2x.png"; sourceTree = "<group>"; };
+		38E953FE17B77C3800FA3A9E /* favourite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = favourite.png; path = Images/favourite.png; sourceTree = "<group>"; };
+		38E953FF17B77C3800FA3A9E /* favourite@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "favourite@2x.png"; path = "Images/favourite@2x.png"; sourceTree = "<group>"; };
+		38E9540017B77C3800FA3A9E /* howTo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = howTo.png; path = Images/howTo.png; sourceTree = "<group>"; };
+		38E9540117B77C3800FA3A9E /* howTo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "howTo@2x.png"; path = "Images/howTo@2x.png"; sourceTree = "<group>"; };
+		38E9540217B77C3800FA3A9E /* map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = map.png; path = Images/map.png; sourceTree = "<group>"; };
+		38E9540317B77C3800FA3A9E /* map@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "map@2x.png"; path = "Images/map@2x.png"; sourceTree = "<group>"; };
+		38E9540417B77C3800FA3A9E /* setting.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = setting.png; path = Images/setting.png; sourceTree = "<group>"; };
+		38E9540517B77C3800FA3A9E /* setting@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "setting@2x.png"; path = "Images/setting@2x.png"; sourceTree = "<group>"; };
+		38E9541117B77D2000FA3A9E /* GMFavouriteHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMFavouriteHomeViewController.h; sourceTree = "<group>"; };
+		38E9541217B77D2000FA3A9E /* GMFavouriteHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMFavouriteHomeViewController.m; sourceTree = "<group>"; };
+		38E9541317B77D2000FA3A9E /* GMFavouriteHomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GMFavouriteHomeViewController.xib; sourceTree = "<group>"; };
+		38E9541617B77E1D00FA3A9E /* GMHowToViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMHowToViewController.h; sourceTree = "<group>"; };
+		38E9541717B77E1D00FA3A9E /* GMHowToViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMHowToViewController.m; sourceTree = "<group>"; };
+		38E9541817B77E1D00FA3A9E /* GMHowToViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GMHowToViewController.xib; sourceTree = "<group>"; };
+		38E9541B17B77F4900FA3A9E /* GMThanksContactViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMThanksContactViewController.h; sourceTree = "<group>"; };
+		38E9541C17B77F4900FA3A9E /* GMThanksContactViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMThanksContactViewController.m; sourceTree = "<group>"; };
+		38E9541D17B77F4900FA3A9E /* GMThanksContactViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GMThanksContactViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		38CB73C61798A8E100EF4FC9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38CB73CD1798A8E100EF4FC9 /* UIKit.framework in Frameworks */,
+				38CB73CF1798A8E100EF4FC9 /* Foundation.framework in Frameworks */,
+				38CB73D11798A8E100EF4FC9 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		38CB73FF1798A8E200EF4FC9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38CB74051798A8E200EF4FC9 /* SenTestingKit.framework in Frameworks */,
+				38CB74061798A8E200EF4FC9 /* UIKit.framework in Frameworks */,
+				38CB74071798A8E200EF4FC9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		38CB73C01798A8E100EF4FC9 = {
+			isa = PBXGroup;
+			children = (
+				38CB73D21798A8E100EF4FC9 /* GMBondiSleep */,
+				38CB740A1798A8E200EF4FC9 /* GMBondiSleepTests */,
+				38CB73CB1798A8E100EF4FC9 /* Frameworks */,
+				38CB73CA1798A8E100EF4FC9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		38CB73CA1798A8E100EF4FC9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				38CB73C91798A8E100EF4FC9 /* GMBondiSleep.app */,
+				38CB74031798A8E200EF4FC9 /* GMBondiSleepTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		38CB73CB1798A8E100EF4FC9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				38CB73CC1798A8E100EF4FC9 /* UIKit.framework */,
+				38CB73CE1798A8E100EF4FC9 /* Foundation.framework */,
+				38CB73D01798A8E100EF4FC9 /* CoreGraphics.framework */,
+				38CB74041798A8E200EF4FC9 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		38CB73D21798A8E100EF4FC9 /* GMBondiSleep */ = {
+			isa = PBXGroup;
+			children = (
+				38CB73DB1798A8E200EF4FC9 /* AppDelegate.h */,
+				38CB73DC1798A8E200EF4FC9 /* AppDelegate.m */,
+				38E953CC17B7654A00FA3A9E /* MapSection */,
+				38E953D017B7659400FA3A9E /* FavouriteSection */,
+				38E953D417B767DA00FA3A9E /* SettingsSection */,
+				38E953D817B7699800FA3A9E /* HowToSection */,
+				38E953DC17B769BF00FA3A9E /* ThanksAndContactSection */,
+				38E953C817B7648A00FA3A9E /* Common */,
+				38E953C517B762CD00FA3A9E /* Resources */,
+				38CB73D31798A8E200EF4FC9 /* Supporting Files */,
+			);
+			path = GMBondiSleep;
+			sourceTree = "<group>";
+		};
+		38CB73D31798A8E200EF4FC9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				38D2A6C517B8B7D80000F448 /* GMBondiSleep-Info.plist */,
+				38D2A6C317B8B7C80000F448 /* InfoPlist.strings */,
+				38CB73D81798A8E200EF4FC9 /* main.m */,
+				38CB73DA1798A8E200EF4FC9 /* GMBondiSleep-Prefix.pch */,
+				38CB73DE1798A8E200EF4FC9 /* Default.png */,
+				38CB73E01798A8E200EF4FC9 /* Default@2x.png */,
+				38CB73E21798A8E200EF4FC9 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		38CB740A1798A8E200EF4FC9 /* GMBondiSleepTests */ = {
+			isa = PBXGroup;
+			children = (
+				38CB74101798A8E200EF4FC9 /* GMBondiSleepTests.h */,
+				38CB74111798A8E200EF4FC9 /* GMBondiSleepTests.m */,
+				38CB740B1798A8E200EF4FC9 /* Supporting Files */,
+			);
+			path = GMBondiSleepTests;
+			sourceTree = "<group>";
+		};
+		38CB740B1798A8E200EF4FC9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				38D2A6C717B8B8720000F448 /* GMBondiSleepTests-Info.plist */,
+				38D2A6C817B8B8720000F448 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		38E953C517B762CD00FA3A9E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				38E953C617B7630A00FA3A9E /* Images */,
+				38D2A6CF17B8B89B0000F448 /* Localizable.strings */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		38E953C617B7630A00FA3A9E /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				38E953FB17B77B3E00FA3A9E /* TabBar */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		38E953C817B7648A00FA3A9E /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				38E953CB17B764A900FA3A9E /* Controller */,
+				38E953CA17B764A400FA3A9E /* View */,
+				38E953C917B7649C00FA3A9E /* Model */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		38E953C917B7649C00FA3A9E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				38E953E617B775B200FA3A9E /* GMBaseObject.h */,
+				38E953E717B775B200FA3A9E /* GMBaseObject.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		38E953CA17B764A400FA3A9E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				38E953E317B7759400FA3A9E /* GMBaseView.h */,
+				38E953E417B7759400FA3A9E /* GMBaseView.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		38E953CB17B764A900FA3A9E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				38E953E017B7756B00FA3A9E /* GMBaseViewController.h */,
+				38E953E117B7756B00FA3A9E /* GMBaseViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		38E953CC17B7654A00FA3A9E /* MapSection */ = {
+			isa = PBXGroup;
+			children = (
+				38E953CF17B7656000FA3A9E /* Model */,
+				38E953CE17B7655A00FA3A9E /* View */,
+				38E953CD17B7655400FA3A9E /* Controller */,
+			);
+			name = MapSection;
+			sourceTree = "<group>";
+		};
+		38E953CD17B7655400FA3A9E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				38E953E917B7777A00FA3A9E /* GMMapViewController.h */,
+				38E953EA17B7777A00FA3A9E /* GMMapViewController.m */,
+				38E953EB17B7777A00FA3A9E /* GMMapViewController.xib */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		38E953CE17B7655A00FA3A9E /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		38E953CF17B7656000FA3A9E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		38E953D017B7659400FA3A9E /* FavouriteSection */ = {
+			isa = PBXGroup;
+			children = (
+				38E953D317B765B300FA3A9E /* Controller */,
+				38E953D217B765AD00FA3A9E /* View */,
+				38E953D117B765A300FA3A9E /* Model */,
+			);
+			name = FavouriteSection;
+			sourceTree = "<group>";
+		};
+		38E953D117B765A300FA3A9E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		38E953D217B765AD00FA3A9E /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		38E953D317B765B300FA3A9E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				38E9541117B77D2000FA3A9E /* GMFavouriteHomeViewController.h */,
+				38E9541217B77D2000FA3A9E /* GMFavouriteHomeViewController.m */,
+				38E9541317B77D2000FA3A9E /* GMFavouriteHomeViewController.xib */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		38E953D417B767DA00FA3A9E /* SettingsSection */ = {
+			isa = PBXGroup;
+			children = (
+				38E953D717B7680000FA3A9E /* Controller */,
+				38E953D617B767FC00FA3A9E /* View */,
+				38E953D517B767F600FA3A9E /* Model */,
+			);
+			name = SettingsSection;
+			sourceTree = "<group>";
+		};
+		38E953D517B767F600FA3A9E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		38E953D617B767FC00FA3A9E /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		38E953D717B7680000FA3A9E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		38E953D817B7699800FA3A9E /* HowToSection */ = {
+			isa = PBXGroup;
+			children = (
+				38E953DB17B769AD00FA3A9E /* Controller */,
+				38E953DA17B769A900FA3A9E /* View */,
+				38E953D917B769A000FA3A9E /* Model */,
+			);
+			name = HowToSection;
+			sourceTree = "<group>";
+		};
+		38E953D917B769A000FA3A9E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		38E953DA17B769A900FA3A9E /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		38E953DB17B769AD00FA3A9E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				38E9541617B77E1D00FA3A9E /* GMHowToViewController.h */,
+				38E9541717B77E1D00FA3A9E /* GMHowToViewController.m */,
+				38E9541817B77E1D00FA3A9E /* GMHowToViewController.xib */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		38E953DC17B769BF00FA3A9E /* ThanksAndContactSection */ = {
+			isa = PBXGroup;
+			children = (
+				38E953DF17B769D500FA3A9E /* Controller */,
+				38E953DE17B769D100FA3A9E /* View */,
+				38E953DD17B769CC00FA3A9E /* Model */,
+			);
+			name = ThanksAndContactSection;
+			sourceTree = "<group>";
+		};
+		38E953DD17B769CC00FA3A9E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		38E953DE17B769D100FA3A9E /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		38E953DF17B769D500FA3A9E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				38E9541B17B77F4900FA3A9E /* GMThanksContactViewController.h */,
+				38E9541C17B77F4900FA3A9E /* GMThanksContactViewController.m */,
+				38E9541D17B77F4900FA3A9E /* GMThanksContactViewController.xib */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		38E953FB17B77B3E00FA3A9E /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				38E953FC17B77C3800FA3A9E /* contactMe.png */,
+				38E953FD17B77C3800FA3A9E /* contactMe@2x.png */,
+				38E953FE17B77C3800FA3A9E /* favourite.png */,
+				38E953FF17B77C3800FA3A9E /* favourite@2x.png */,
+				38E9540017B77C3800FA3A9E /* howTo.png */,
+				38E9540117B77C3800FA3A9E /* howTo@2x.png */,
+				38E9540217B77C3800FA3A9E /* map.png */,
+				38E9540317B77C3800FA3A9E /* map@2x.png */,
+				38E9540417B77C3800FA3A9E /* setting.png */,
+				38E9540517B77C3800FA3A9E /* setting@2x.png */,
+			);
+			name = TabBar;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		38CB73C81798A8E100EF4FC9 /* GMBondiSleep */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 38CB74151798A8E200EF4FC9 /* Build configuration list for PBXNativeTarget "GMBondiSleep" */;
+			buildPhases = (
+				38CB73C51798A8E100EF4FC9 /* Sources */,
+				38CB73C61798A8E100EF4FC9 /* Frameworks */,
+				38CB73C71798A8E100EF4FC9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GMBondiSleep;
+			productName = GMBondiSleep;
+			productReference = 38CB73C91798A8E100EF4FC9 /* GMBondiSleep.app */;
+			productType = "com.apple.product-type.application";
+		};
+		38CB74021798A8E200EF4FC9 /* GMBondiSleepTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 38CB74181798A8E200EF4FC9 /* Build configuration list for PBXNativeTarget "GMBondiSleepTests" */;
+			buildPhases = (
+				38CB73FE1798A8E200EF4FC9 /* Sources */,
+				38CB73FF1798A8E200EF4FC9 /* Frameworks */,
+				38CB74001798A8E200EF4FC9 /* Resources */,
+				38CB74011798A8E200EF4FC9 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				38CB74091798A8E200EF4FC9 /* PBXTargetDependency */,
+			);
+			name = GMBondiSleepTests;
+			productName = GMBondiSleepTests;
+			productReference = 38CB74031798A8E200EF4FC9 /* GMBondiSleepTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		38CB73C11798A8E100EF4FC9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Gastón Montes";
+			};
+			buildConfigurationList = 38CB73C41798A8E100EF4FC9 /* Build configuration list for PBXProject "GMBondiSleep" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				es,
+			);
+			mainGroup = 38CB73C01798A8E100EF4FC9;
+			productRefGroup = 38CB73CA1798A8E100EF4FC9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				38CB73C81798A8E100EF4FC9 /* GMBondiSleep */,
+				38CB74021798A8E200EF4FC9 /* GMBondiSleepTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		38CB73C71798A8E100EF4FC9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38CB73DF1798A8E200EF4FC9 /* Default.png in Resources */,
+				38CB73E11798A8E200EF4FC9 /* Default@2x.png in Resources */,
+				38CB73E31798A8E200EF4FC9 /* Default-568h@2x.png in Resources */,
+				38E953ED17B7777A00FA3A9E /* GMMapViewController.xib in Resources */,
+				38E9540617B77C3800FA3A9E /* contactMe.png in Resources */,
+				38E9540717B77C3800FA3A9E /* contactMe@2x.png in Resources */,
+				38E9540817B77C3800FA3A9E /* favourite.png in Resources */,
+				38E9540917B77C3800FA3A9E /* favourite@2x.png in Resources */,
+				38E9540A17B77C3800FA3A9E /* howTo.png in Resources */,
+				38E9540B17B77C3800FA3A9E /* howTo@2x.png in Resources */,
+				38E9540C17B77C3800FA3A9E /* map.png in Resources */,
+				38E9540D17B77C3800FA3A9E /* map@2x.png in Resources */,
+				38E9540E17B77C3800FA3A9E /* setting.png in Resources */,
+				38E9540F17B77C3800FA3A9E /* setting@2x.png in Resources */,
+				38E9541517B77D2000FA3A9E /* GMFavouriteHomeViewController.xib in Resources */,
+				38E9541A17B77E1D00FA3A9E /* GMHowToViewController.xib in Resources */,
+				38E9541F17B77F4A00FA3A9E /* GMThanksContactViewController.xib in Resources */,
+				38D2A6C417B8B7C80000F448 /* InfoPlist.strings in Resources */,
+				38D2A6CD17B8B89B0000F448 /* Localizable.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		38CB74001798A8E200EF4FC9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38D2A6CA17B8B8720000F448 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		38CB74011798A8E200EF4FC9 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		38CB73C51798A8E100EF4FC9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38CB73D91798A8E200EF4FC9 /* main.m in Sources */,
+				38CB73DD1798A8E200EF4FC9 /* AppDelegate.m in Sources */,
+				38E953E217B7756B00FA3A9E /* GMBaseViewController.m in Sources */,
+				38E953E517B7759400FA3A9E /* GMBaseView.m in Sources */,
+				38E953E817B775B200FA3A9E /* GMBaseObject.m in Sources */,
+				38E953EC17B7777A00FA3A9E /* GMMapViewController.m in Sources */,
+				38E9541417B77D2000FA3A9E /* GMFavouriteHomeViewController.m in Sources */,
+				38E9541917B77E1D00FA3A9E /* GMHowToViewController.m in Sources */,
+				38E9541E17B77F4A00FA3A9E /* GMThanksContactViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		38CB73FE1798A8E200EF4FC9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38CB74121798A8E200EF4FC9 /* GMBondiSleepTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		38CB74091798A8E200EF4FC9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 38CB73C81798A8E100EF4FC9 /* GMBondiSleep */;
+			targetProxy = 38CB74081798A8E200EF4FC9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		38D2A6CF17B8B89B0000F448 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				38D2A6CE17B8B89B0000F448 /* en */,
+				38D2A6D017B8B9C80000F448 /* es */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		38CB74131798A8E200EF4FC9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		38CB74141798A8E200EF4FC9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		38CB74161798A8E200EF4FC9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GMBondiSleep/GMBondiSleep-Prefix.pch";
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				INFOPLIST_FILE = "GMBondiSleep/GMBondiSleep-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		38CB74171798A8E200EF4FC9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GMBondiSleep/GMBondiSleep-Prefix.pch";
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				INFOPLIST_FILE = "GMBondiSleep/GMBondiSleep-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		38CB74191798A8E200EF4FC9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GMBondiSleep.app/GMBondiSleep";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GMBondiSleep/GMBondiSleep-Prefix.pch";
+				INFOPLIST_FILE = "GMBondiSleepTests/GMBondiSleepTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		38CB741A1798A8E200EF4FC9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GMBondiSleep.app/GMBondiSleep";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GMBondiSleep/GMBondiSleep-Prefix.pch";
+				INFOPLIST_FILE = "GMBondiSleepTests/GMBondiSleepTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		38CB73C41798A8E100EF4FC9 /* Build configuration list for PBXProject "GMBondiSleep" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				38CB74131798A8E200EF4FC9 /* Debug */,
+				38CB74141798A8E200EF4FC9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		38CB74151798A8E200EF4FC9 /* Build configuration list for PBXNativeTarget "GMBondiSleep" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				38CB74161798A8E200EF4FC9 /* Debug */,
+				38CB74171798A8E200EF4FC9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		38CB74181798A8E200EF4FC9 /* Build configuration list for PBXNativeTarget "GMBondiSleepTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				38CB74191798A8E200EF4FC9 /* Debug */,
+				38CB741A1798A8E200EF4FC9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 38CB73C11798A8E100EF4FC9 /* Project object */;
+}
