@@ -22,6 +22,7 @@
 		38D2A6C417B8B7C80000F448 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 38D2A6C317B8B7C80000F448 /* InfoPlist.strings */; };
 		38D2A6CA17B8B8720000F448 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 38D2A6C817B8B8720000F448 /* InfoPlist.strings */; };
 		38D2A6CD17B8B89B0000F448 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 38D2A6CF17B8B89B0000F448 /* Localizable.strings */; };
+		38D2A6D717B9D6600000F448 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38D2A6D617B9D6600000F448 /* MapKit.framework */; };
 		38E953E217B7756B00FA3A9E /* GMBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38E953E117B7756B00FA3A9E /* GMBaseViewController.m */; };
 		38E953E517B7759400FA3A9E /* GMBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 38E953E417B7759400FA3A9E /* GMBaseView.m */; };
 		38E953E817B775B200FA3A9E /* GMBaseObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 38E953E717B775B200FA3A9E /* GMBaseObject.m */; };
@@ -75,8 +76,9 @@
 		38D2A6C517B8B7D80000F448 /* GMBondiSleep-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GMBondiSleep-Info.plist"; sourceTree = "<group>"; };
 		38D2A6C717B8B8720000F448 /* GMBondiSleepTests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GMBondiSleepTests-Info.plist"; sourceTree = "<group>"; };
 		38D2A6C817B8B8720000F448 /* InfoPlist.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = InfoPlist.strings; sourceTree = "<group>"; };
-		38D2A6CE17B8B89B0000F448 /* en */ = {isa = PBXFileReference; lastKnownFileType = file; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		38D2A6D017B8B9C80000F448 /* es */ = {isa = PBXFileReference; lastKnownFileType = file; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		38D2A6CE17B8B89B0000F448 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		38D2A6D017B8B9C80000F448 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		38D2A6D617B9D6600000F448 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		38E953E017B7756B00FA3A9E /* GMBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMBaseViewController.h; sourceTree = "<group>"; };
 		38E953E117B7756B00FA3A9E /* GMBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMBaseViewController.m; sourceTree = "<group>"; };
 		38E953E317B7759400FA3A9E /* GMBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMBaseView.h; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38D2A6D717B9D6600000F448 /* MapKit.framework in Frameworks */,
 				38CB73CD1798A8E100EF4FC9 /* UIKit.framework in Frameworks */,
 				38CB73CF1798A8E100EF4FC9 /* Foundation.framework in Frameworks */,
 				38CB73D11798A8E100EF4FC9 /* CoreGraphics.framework in Frameworks */,
@@ -153,6 +156,7 @@
 		38CB73CB1798A8E100EF4FC9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				38D2A6D617B9D6600000F448 /* MapKit.framework */,
 				38CB73CC1798A8E100EF4FC9 /* UIKit.framework */,
 				38CB73CE1798A8E100EF4FC9 /* Foundation.framework */,
 				38CB73D01798A8E100EF4FC9 /* CoreGraphics.framework */,
