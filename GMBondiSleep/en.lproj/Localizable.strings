@@ -11,3 +11,6 @@
 "TabBarItem.Favourite" = "Favourites";
 "TabBarItem.HowTo" = "How to";
 "TabBarItem.ContactMe" = "Contact me";
+
+// LoadingView
+"LoadingView.Message" = "Loading...";

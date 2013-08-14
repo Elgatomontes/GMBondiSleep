@@ -23,6 +23,10 @@
 		38D2A6CA17B8B8720000F448 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 38D2A6C817B8B8720000F448 /* InfoPlist.strings */; };
 		38D2A6CD17B8B89B0000F448 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 38D2A6CF17B8B89B0000F448 /* Localizable.strings */; };
 		38D2A6D717B9D6600000F448 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38D2A6D617B9D6600000F448 /* MapKit.framework */; };
+		38D2A6E017BB0DD10000F448 /* UIView+LoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 38D2A6DF17BB0DD10000F448 /* UIView+LoadingView.m */; };
+		38D2A6E317BB0FE00000F448 /* GMLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 38D2A6E217BB0FE00000F448 /* GMLoadingView.m */; };
+		38D2A6E517BB0FF50000F448 /* GMLoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38D2A6E417BB0FF50000F448 /* GMLoadingView.xib */; };
+		38D2A6EA17BB1B2B0000F448 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38D2A6E917BB1B2B0000F448 /* CoreLocation.framework */; };
 		38E953E217B7756B00FA3A9E /* GMBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38E953E117B7756B00FA3A9E /* GMBaseViewController.m */; };
 		38E953E517B7759400FA3A9E /* GMBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 38E953E417B7759400FA3A9E /* GMBaseView.m */; };
 		38E953E817B775B200FA3A9E /* GMBaseObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 38E953E717B775B200FA3A9E /* GMBaseObject.m */; };
@@ -79,6 +83,12 @@
 		38D2A6CE17B8B89B0000F448 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		38D2A6D017B8B9C80000F448 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		38D2A6D617B9D6600000F448 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		38D2A6DE17BB0DD10000F448 /* UIView+LoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LoadingView.h"; sourceTree = "<group>"; };
+		38D2A6DF17BB0DD10000F448 /* UIView+LoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LoadingView.m"; sourceTree = "<group>"; };
+		38D2A6E117BB0FE00000F448 /* GMLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMLoadingView.h; sourceTree = "<group>"; };
+		38D2A6E217BB0FE00000F448 /* GMLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMLoadingView.m; sourceTree = "<group>"; };
+		38D2A6E417BB0FF50000F448 /* GMLoadingView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GMLoadingView.xib; sourceTree = "<group>"; };
+		38D2A6E917BB1B2B0000F448 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		38E953E017B7756B00FA3A9E /* GMBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMBaseViewController.h; sourceTree = "<group>"; };
 		38E953E117B7756B00FA3A9E /* GMBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMBaseViewController.m; sourceTree = "<group>"; };
 		38E953E317B7759400FA3A9E /* GMBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMBaseView.h; sourceTree = "<group>"; };
@@ -114,6 +124,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38D2A6EA17BB1B2B0000F448 /* CoreLocation.framework in Frameworks */,
 				38D2A6D717B9D6600000F448 /* MapKit.framework in Frameworks */,
 				38CB73CD1798A8E100EF4FC9 /* UIKit.framework in Frameworks */,
 				38CB73CF1798A8E100EF4FC9 /* Foundation.framework in Frameworks */,
@@ -156,6 +167,7 @@
 		38CB73CB1798A8E100EF4FC9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				38D2A6E917BB1B2B0000F448 /* CoreLocation.framework */,
 				38D2A6D617B9D6600000F448 /* MapKit.framework */,
 				38CB73CC1798A8E100EF4FC9 /* UIKit.framework */,
 				38CB73CE1798A8E100EF4FC9 /* Foundation.framework */,
@@ -215,6 +227,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		38D2A6DD17BB0DA30000F448 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				38D2A6DE17BB0DD10000F448 /* UIView+LoadingView.h */,
+				38D2A6DF17BB0DD10000F448 /* UIView+LoadingView.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
 		38E953C517B762CD00FA3A9E /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -245,6 +266,7 @@
 		38E953C917B7649C00FA3A9E /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				38D2A6DD17BB0DA30000F448 /* Categories */,
 				38E953E617B775B200FA3A9E /* GMBaseObject.h */,
 				38E953E717B775B200FA3A9E /* GMBaseObject.m */,
 			);
@@ -256,6 +278,9 @@
 			children = (
 				38E953E317B7759400FA3A9E /* GMBaseView.h */,
 				38E953E417B7759400FA3A9E /* GMBaseView.m */,
+				38D2A6E117BB0FE00000F448 /* GMLoadingView.h */,
+				38D2A6E217BB0FE00000F448 /* GMLoadingView.m */,
+				38D2A6E417BB0FF50000F448 /* GMLoadingView.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -544,6 +569,7 @@
 				38E9541F17B77F4A00FA3A9E /* GMThanksContactViewController.xib in Resources */,
 				38D2A6C417B8B7C80000F448 /* InfoPlist.strings in Resources */,
 				38D2A6CD17B8B89B0000F448 /* Localizable.strings in Resources */,
+				38D2A6E517BB0FF50000F448 /* GMLoadingView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -587,6 +613,8 @@
 				38E9541417B77D2000FA3A9E /* GMFavouriteHomeViewController.m in Sources */,
 				38E9541917B77E1D00FA3A9E /* GMHowToViewController.m in Sources */,
 				38E9541E17B77F4A00FA3A9E /* GMThanksContactViewController.m in Sources */,
+				38D2A6E017BB0DD10000F448 /* UIView+LoadingView.m in Sources */,
+				38D2A6E317BB0FE00000F448 /* GMLoadingView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
