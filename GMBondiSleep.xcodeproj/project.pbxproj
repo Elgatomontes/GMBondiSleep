@@ -27,6 +27,7 @@
 		38D2A6E317BB0FE00000F448 /* GMLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 38D2A6E217BB0FE00000F448 /* GMLoadingView.m */; };
 		38D2A6E517BB0FF50000F448 /* GMLoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38D2A6E417BB0FF50000F448 /* GMLoadingView.xib */; };
 		38D2A6EA17BB1B2B0000F448 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38D2A6E917BB1B2B0000F448 /* CoreLocation.framework */; };
+		38D2A76A17BC6CAE0000F448 /* GMLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 38D2A76917BC6CAE0000F448 /* GMLocationManager.m */; };
 		38E953E217B7756B00FA3A9E /* GMBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38E953E117B7756B00FA3A9E /* GMBaseViewController.m */; };
 		38E953E517B7759400FA3A9E /* GMBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 38E953E417B7759400FA3A9E /* GMBaseView.m */; };
 		38E953E817B775B200FA3A9E /* GMBaseObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 38E953E717B775B200FA3A9E /* GMBaseObject.m */; };
@@ -89,6 +90,8 @@
 		38D2A6E217BB0FE00000F448 /* GMLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMLoadingView.m; sourceTree = "<group>"; };
 		38D2A6E417BB0FF50000F448 /* GMLoadingView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GMLoadingView.xib; sourceTree = "<group>"; };
 		38D2A6E917BB1B2B0000F448 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		38D2A76817BC6CAE0000F448 /* GMLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMLocationManager.h; sourceTree = "<group>"; };
+		38D2A76917BC6CAE0000F448 /* GMLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMLocationManager.m; sourceTree = "<group>"; };
 		38E953E017B7756B00FA3A9E /* GMBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMBaseViewController.h; sourceTree = "<group>"; };
 		38E953E117B7756B00FA3A9E /* GMBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMBaseViewController.m; sourceTree = "<group>"; };
 		38E953E317B7759400FA3A9E /* GMBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMBaseView.h; sourceTree = "<group>"; };
@@ -236,6 +239,15 @@
 			name = Categories;
 			sourceTree = "<group>";
 		};
+		38D2A76717BC6C900000F448 /* Singleton */ = {
+			isa = PBXGroup;
+			children = (
+				38D2A76817BC6CAE0000F448 /* GMLocationManager.h */,
+				38D2A76917BC6CAE0000F448 /* GMLocationManager.m */,
+			);
+			name = Singleton;
+			sourceTree = "<group>";
+		};
 		38E953C517B762CD00FA3A9E /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -266,6 +278,7 @@
 		38E953C917B7649C00FA3A9E /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				38D2A76717BC6C900000F448 /* Singleton */,
 				38D2A6DD17BB0DA30000F448 /* Categories */,
 				38E953E617B775B200FA3A9E /* GMBaseObject.h */,
 				38E953E717B775B200FA3A9E /* GMBaseObject.m */,
@@ -615,6 +628,7 @@
 				38E9541E17B77F4A00FA3A9E /* GMThanksContactViewController.m in Sources */,
 				38D2A6E017BB0DD10000F448 /* UIView+LoadingView.m in Sources */,
 				38D2A6E317BB0FE00000F448 /* GMLoadingView.m in Sources */,
+				38D2A76A17BC6CAE0000F448 /* GMLocationManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

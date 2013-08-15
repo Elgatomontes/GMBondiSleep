@@ -15,14 +15,15 @@
 #pragma mark - Public Methods
 - (void)showAsLoadingView {
     
-    // The view is not shown as loading. Add the loading view
-    GMLoadingView *loadingView = [GMLoadingView loadingInstance];
-    
-    loadingView.frame = self.bounds;
-    loadingView.userInteractionEnabled = NO;
-    
-    [self addSubview:loadingView];
-    
+    if (![self isShownAsLoading]) {
+        // The view is not shown as loading. Add the loading view
+        GMLoadingView *loadingView = [GMLoadingView loadingInstance];
+        
+        loadingView.frame = self.bounds;
+        loadingView.userInteractionEnabled = NO;
+        
+        [self addSubview:loadingView];
+    }
 }
 
 - (void)stopShowingAsLoading {
@@ -31,6 +32,11 @@
 }
 
 #pragma mark - Private methods
+// Determines if there is a loading view added to this view
+- (BOOL)isShownAsLoading {
+    return ([self loadingSubview] != nil);
+}
+
 // Searches for a subview of class "DMLoadingView", and returns it (if found)
 - (GMLoadingView *)loadingSubview {
     GMLoadingView * __block loadingSubview = nil;
