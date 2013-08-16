@@ -49,7 +49,7 @@
 }
 
 #pragma mark - MKMapViewDelegate
-// It does not work when app is background.
+// NOTE: It does not work when app is background.
 - (void)mapView:(MKMapView *)mapView didUpdateUserLocation:(MKUserLocation *)userLocation {
     // Update map region to current location region if only the app is in foreground.
     if (self.mapView.userLocationVisible == NO) {
