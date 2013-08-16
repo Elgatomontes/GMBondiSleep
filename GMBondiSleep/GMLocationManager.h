@@ -23,4 +23,7 @@
 - (void)addLocationObserver:(NSObject<GMLocationManagerDelegate> *)_observer;
 - (void)removeLocationObserver:(NSObject<GMLocationManagerDelegate>*)_observer;
 
+- (void)appEnterToBackground;
+- (void)appEnterToForeground;
+
 @end

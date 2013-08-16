@@ -45,21 +45,10 @@
 
 #pragma mark - GMLocationManagerDelegate
 - (void)locationUpdated:(CLLocation *)_newLocation {
-    // TODO: esto aca no va a servir ya que el redibujo de la pantalla se hace desde el mapView:didUpdateUserLocation mientras la app este foreground.
-    // Este método va a ser el que este optimizado y que no pida constantemente la locación.
+
 }
 
 #pragma mark - MKMapViewDelegate
-- (void)mapViewWillStartLoadingMap:(MKMapView *)mapView {
-    // Loading view over the map.
-    [self.view showAsLoadingView];
-}
-
-- (void)mapViewDidFinishLoadingMap:(MKMapView *)mapView {
-    // Remove Loading view over the map.
-    [self.view stopShowingAsLoading];
-}
-
 // It does not work when app is background.
 - (void)mapView:(MKMapView *)mapView didUpdateUserLocation:(MKUserLocation *)userLocation {
     // Update map region to current location region if only the app is in foreground.
